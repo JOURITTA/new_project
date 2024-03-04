@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Exemple_Navbar from './components/Exemple_Navbar';
+import Movielist from './components/movielist';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import netflixlogo from './Couleur-logo-Netflix.jpg'
+import Compter from './components/Compter';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Exemple_Navbar logo={netflixlogo} />
+      <Compter/>
+      <Movielist/>
+    
     </div>
   );
 }
